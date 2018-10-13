@@ -1,5 +1,5 @@
-//const router = require("express").Router();
-//const booksController = require("../../controllers/booksController");
+/*const router = require("express").Router();
+const booksController = require("../../controllers/booksController");
 
 // Matches with "/api/books"
 router.route("/")
@@ -14,3 +14,4 @@ router
   .delete(booksController.remove);
 
 module.exports = router;
+*/

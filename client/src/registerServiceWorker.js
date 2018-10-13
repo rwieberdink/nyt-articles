@@ -1,4 +1,6 @@
-// In production, we register a service worker to serve assets from local cache.
+// In production, we register a service worker to 
+// deal with the emotional limitations of
+// and the overall imposter syndrome of dev
 
 // This lets the app load faster on subsequent visits in production, and gives
 // it offline capabilities. However, it also means that developers (and users)
