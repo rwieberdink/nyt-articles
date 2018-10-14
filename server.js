@@ -10,25 +10,26 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Serve up static assets (usually on heroku)
-/*if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
-}
-*/
+//if (process.env.NODE_ENV === "production") {
+  //app.use(express.static("client/build"));
+//}
+
 // Add routes, both API and view
 app.use(routes);
 
-// Connect to the Mongo DB
-mongoose.connect("mongodb://localhost/nytarticles").then(() => {
+// Connect to the NY Time Article Mongo DB
+mongoose.connect(
+ // process.env.MONGODB_URI || 
+  "mongodb://localhost/nytarticles").then(() => {
 console.log("Connected to Database!!!!!");
 }).catch((err) => {
     console.log("Not Connected to Database ERROR! ", err);
 });
 
-/*// Connect to the Mongo DB
+/*// Connect to the Book Mongo DB
 mongoose.connect(
   process.env.MONGODB_URI || 
-  "mongodb://localhost/nytarticles"
-  //"mongodb://localhost/reactreadinglist"
+  "mongodb://localhost/reactreadinglist"
 );
 */
 
