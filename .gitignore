@@ -4,7 +4,7 @@
 # An asterisk is a wildcard that matches zero or more characters. (*.env)
 
 # dependencies
-node_modules/
+/node_modules
 
 # testing
 /coverage
